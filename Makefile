@@ -1,5 +1,5 @@
 CXX = g++
-override CXXFLAGS += -std=c++14 -O2 -g -Wall
+override CXXFLAGS += -std=c++11 -O2 -g -Wall
 CPPFLAGS = $(shell pkg-config --cflags gsl)
 LDFLAGS = -larmadillo $(shell pkg-config --libs gsl)
 
