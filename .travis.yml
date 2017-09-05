@@ -3,6 +3,6 @@ language: cpp
 before_install:
  - sudo apt-get update -qq
  - sudo apt-get install -qq libarmadillo-dev
- - apt-get search libgsl
+ - sudo apt-cache search libgsl
  - sudo apt-get install -qq libgsl-dev
 script: make
