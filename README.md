@@ -22,3 +22,5 @@ To test:
 ```bash
 $ make test
 ```
+
+Note: Travis has a nice [YAML validator](http://lint.travis-ci.org/).
