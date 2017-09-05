@@ -1,13 +1,12 @@
-# CXX = g++
 override CXXFLAGS += -std=c++14 -O2 -g -Wall
 CPPFLAGS = $(shell pkg-config --cflags gsl)
-LDFLAGS = -larmadillo $(shell pkg-config --libs gsl)
+LDFLAGS = $(shell pkg-config --libs gsl)
 
-all: circuit.exe
+all: cannon.exe
 
-data: resistance.txt
+data: trajectory.txt
 
-resistance.txt: circuit_01.exe
+trajectory.txt: cannon.exe
 	./$^ > $@
 
 %.exe: %.o
@@ -19,4 +18,4 @@ resistance.txt: circuit_01.exe
 clean:
 	$(RM) *.exe *.o
 	$(RM) core core.*
-	$(RM)  resistance.txt
+	$(RM)  trajectory.txt
