@@ -11,8 +11,10 @@ matrix:
       addons:
         apt:
           packages:
+            - gcc-5
             - g++-5
           sources: &sources
+            - ubuntu-toolchain-r-test
             - llvm-toolchain-precise-3.8
                                                                                    - ubuntu-toolchain-r-test
 script: make
