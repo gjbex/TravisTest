@@ -8,3 +8,14 @@ integration.
     this for real world applications, please.
 1. `Makefile`: make file to build and run the application.
 1. `.travis.yml`: Travis CI configuration file.
+
+## How to use?
+To build, simply run make:
+```bash
+$ make
+```
+
+To test:
+```bash
+$ make test
+```
