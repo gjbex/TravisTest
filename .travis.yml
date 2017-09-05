@@ -2,7 +2,6 @@ os: linux
 language: generic
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install -qq libarmadillo-dev
   - sudo apt-get install -qq libgsl0-dev
 matrix:
   include:
