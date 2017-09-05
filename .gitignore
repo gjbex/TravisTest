@@ -34,3 +34,6 @@
 # vim backup files
 *.swp
 *~
+
+# ignore artifacts
+trajectory.txt

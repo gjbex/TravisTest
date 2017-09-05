@@ -4,7 +4,8 @@ LDFLAGS = $(shell pkg-config --libs gsl)
 
 all: cannon.exe
 
-data: trajectory.txt
+test: trajectory.txt
+	diff -q $< trajectory_target.txt 
 
 trajectory.txt: cannon.exe
 	./$^ > $@
