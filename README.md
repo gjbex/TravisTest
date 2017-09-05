@@ -1,4 +1,7 @@
 # TravisTest
+
+[![Build Status](https://travis-ci.org/gjbex/TravisTest.svg?branch=master)](https://travis-ci.org/gjbex/TravisTest)
+
 Small repository linked with Travis CI to experiment with continuous
 integration.
 
